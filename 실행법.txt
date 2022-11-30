@@ -1,0 +1,19 @@
+학습
+python train.py --config=yolact_resnet50_cig_snack_config --batch_size=3
+
+실행
+python eval.py --trained_model=weights/yolact_plus_resnet50_cig_snack_117_1172_interrupt.pth --config=yolact_resnet50_cig_snack_config --score_threshold=0.3 --top_k=15 --video_multiframe=4 --video=0
+
+eval_final
+
+python eval_final.py --trained_model=weights/yolact_plus_resnet50_cig_snack_117_1172_interrupt.pth --config=yolact_resnet50_cig_snack_config --score_threshold=0.3 --top_k=15 --video_multiframe=4 --video=0
+
+
+재학습
+python train.py --config=yolact_resnet50_cig_snack_config --resume=weights/yolact_plus_resnet50_cig_snack_11_1098_interrupt.pth --start_iter = -1
+
+
+
+참고 블로그
+
+https://ksg980920.tistory.com/2

@@ -242,3 +242,4 @@ For YOLACT++, please cite
 
 # Contact
 For questions about our paper or code, please contact [Daniel Bolya](mailto:dbolya@ucdavis.edu).
+# yolact_robot
